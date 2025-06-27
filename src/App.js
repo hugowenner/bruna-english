@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, GraduationCap, Users, Globe, Star, MessageCircle, Phone, Mail, CheckCircle, Award, Clock, MapPin, Video, User } from 'lucide-react';
+// Ícones 'Globe' e 'Clock' foram removidos da importação por não estarem em uso.
+import { BookOpen, GraduationCap, Users, Star, MessageCircle, Phone, Mail, CheckCircle, Award, MapPin, Video, User } from 'lucide-react';
 
 export default function BrunaEnglishLanding() {
   const [isVisible, setIsVisible] = useState({});
@@ -47,7 +48,8 @@ export default function BrunaEnglishLanding() {
       setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  // CORREÇÃO: Adicionada a dependência 'testimonials.length'
+  }, [testimonials.length]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">

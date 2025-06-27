@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+ Funcionalidades
+A página é estruturada em componentes, cobrindo as seguintes seções:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Header: Cabeçalho com navegação e menu responsivo para dispositivos móveis.
 
-## Available Scripts
+Hero Section: Seção de boas-vindas com título de impacto e botões de chamada para ação.
 
-In the project directory, you can run:
+Sobre: Apresentação da missão, valores e filosofia de ensino da professora.
 
-### `npm start`
+Serviços: Cards detalhando os serviços oferecidos, como aulas online, presenciais e reforço escolar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lendas (Depoimentos): Uma seção criativa para apresentar depoimentos e histórias de sucesso de alunos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contato: Seção com links diretos para canais de contato, como Discord e Steam (ou outros, como WhatsApp e E-mail).
 
-### `npm test`
+Footer: Rodapé com informações de contato e direitos autorais.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 Tecnologias Utilizadas
+Este projeto foi construído utilizando um conjunto de tecnologias modernas de desenvolvimento front-end:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React: Biblioteca principal para a construção da interface de usuário. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+TypeScript: Adiciona tipagem estática ao JavaScript para maior robustez e manutenibilidade. 
 
-### `npm run eject`
+Next.js:Framework React para produção, oferecendo renderização no servidor, otimização de imagens e uma estrutura de arquivos organizada. (A estrutura com @/ sugere o uso de Next.js).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tailwind CSS: Framework CSS utility-first para estilização rápida e customizável. 
