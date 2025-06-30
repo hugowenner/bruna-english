@@ -23,13 +23,14 @@ export const heroData = {
       "Pós-graduação em Psicopedagogia",
       "Especialista em Inglês"
     ]
-  }
+  },
+  backgroundImageUrl: "/assets/englishday.png" // Adicione esta linha
 };
 
 export const servicesData = {
   title: "Serviços Especializados",
   description: "Metodologia personalizada para cada idade e nível de conhecimento",
-  imageUrl: "/assets/ingles.jpg", // Adicionando o caminho da imagem aqui
+  imageUrl: "/assets/ingles.jpg",
   services: [
     {
       title: "Inglês para Crianças",
