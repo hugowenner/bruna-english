@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Video, MapPin } from 'lucide-react'; // Importar ícones utilizados no componente
+import { Users, Video, MapPin } from 'lucide-react';
 
 export default function Services({ data, isVisible }) {
   const getIcon = (index) => {
@@ -21,6 +21,15 @@ export default function Services({ data, isVisible }) {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {data.description}
           </p>
+          {data.imageUrl && ( // Verifica se a URL da imagem existe antes de renderizar
+            <div className="mt-12 flex justify-center"> {/* Adiciona margem superior e centraliza */}
+              <img
+                src={data.imageUrl} // Usa a URL da imagem do data.js
+                alt="Serviços de Inglês e Matemática" // Texto alternativo para acessibilidade
+                className="w-full max-w-lg rounded-lg shadow-lg object-cover" // Estilos Tailwind para a imagem
+              />
+            </div>
+          )}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

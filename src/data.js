@@ -8,13 +8,13 @@ export const headerData = {
 
 export const heroData = {
   badgeText: "Professora Especializada",
-  headline: "Aprenda Inglês com Confiança",
-  description: "Aulas particulares personalizadas com metodologia comprovada. Do reforço escolar à fluência conversacional.",
-  ctaPrimary: "Começar Agora",
+  headline: "Sua Fluência em Inglês Começa Aqui",
+  description: "Aulas dinâmicas e sob medida para todas as idades e objetivos. Do reforço escolar à conversação avançada, com acompanhamento personalizado para seu sucesso.",
+  ctaPrimary: "Quero Aprender!",
   ctaSecondary: "Saber Mais",
   features: [
-    "Aulas Online e Presenciais",
-    "Material Personalizado"
+    "Aulas Online e Presenciais em BH",
+    "Material Didático Exclusivo e Adaptado"
   ],
   profile: {
     name: "Bruna Bittencourt",
@@ -29,24 +29,25 @@ export const heroData = {
 export const servicesData = {
   title: "Serviços Especializados",
   description: "Metodologia personalizada para cada idade e nível de conhecimento",
+  imageUrl: "/assets/ingles.jpg", // Adicionando o caminho da imagem aqui
   services: [
     {
       title: "Inglês para Crianças",
       subtitle: "Presencial (1º ao 9º ano) - BH Centro-Sul",
       description: "Apoio pedagógico especializado para melhorar o desempenho escolar em inglês. Aulas presenciais em Belo Horizonte (região centro-sul).",
-      color: "from-blue-500 to-green-600" // Alterado para degradê de azul para verde
+      color: "from-blue-500 to-green-600"
     },
     {
       title: "Inglês para Adolescentes e Adultos",
       subtitle: "Online e Presencial",
       description: "Aulas personalizadas com foco na fluência conversacional. Opções online para flexibilidade e presenciais em Belo Horizonte (região centro-sul).",
-      color: "from-blue-500 to-green-600" // Alterado para degradê de azul para verde
+      color: "from-blue-500 to-green-600"
     },
     {
       title: "Reforço Escolar de Matemática",
       subtitle: "Presencial (1º ao 9º ano) - BH Centro-Sul",
       description: "Suporte pedagógico em matemática para alunos do ensino fundamental, com aulas presenciais na região centro-sul de Belo Horizonte.",
-      color: "from-blue-500 to-green-600" // Alterado para degradê de azul para verde
+      color: "from-blue-500 to-green-600"
     }
   ]
 };
@@ -56,18 +57,18 @@ export const qualificationsData = {
   qualifications: [
     {
       title: "Pedagogia",
-      description: "Especialização em processos de ensino-aprendizagem",
-      color: "from-blue-500 to-green-600" // Alterado para degradê de azul para verde
+      description: "Especialista em metodologias e processos de ensino-aprendizagem eficazes.",
+      color: "from-blue-500 to-green-600"
     },
     {
       title: "Direito",
-      description: "Formação complementar para visão ampla da educação",
-      color: "from-blue-500 to-green-600" // Alterado para degradê de azul para verde
+      description: "Fundamentação legal para uma visão abrangente e ética do cenário educacional.",
+      color: "from-blue-500 to-green-600"
     },
     {
       title: "Psicopedagogia",
-      description: "Pós-graduação focada em dificuldades de aprendizagem",
-      color: "from-blue-500 to-green-600" // Alterado para degradê de azul para verde
+      description: "Pós-graduação especializada em identificar e superar dificuldades de aprendizagem.",
+      color: "from-blue-500 to-green-600"
     }
   ]
 };
@@ -109,17 +110,17 @@ export const contactData = {
     {
       title: "Telefone",
       info: "(31) 99999-9999",
-      color: "text-blue-600" // Mantido azul, ou pode ser alterado para um tom de verde se preferir para ser o destaque principal. Deixei para discutir com a Bruna.
+      color: "text-blue-600"
     },
     {
       title: "E-mail",
       info: "bruna@email.com",
-      color: "text-green-600" // Alterado para verde
+      color: "text-green-600"
     },
     {
       title: "WhatsApp",
       info: "Clique para conversar",
-      color: "text-green-600" // Alterado para verde
+      color: "text-green-600"
     }
   ]
 };
