@@ -221,7 +221,22 @@ export const contactData = {
 
 export const footerData = {
   name: "Bruna Bittencourt",
-  title: "Professora de Inglês",
+  tagline: "Professora de Inglês", // Renomeado de 'title' para 'tagline' para evitar confusão
   description: "Transformando vidas através do ensino de inglês com metodologia personalizada e humanizada.",
-  copyright: "© 2025 Bruna Bittencourt. Todos os direitos reservados."
+  copyright: "© 2025 Bruna Bittencourt. Todos os direitos reservados.",
+  // NOVOS DADOS PARA O RODAPÉ
+  links: [
+    { name: "Início", href: "#hero" },
+    { name: "Sobre Mim", href: "#about" },
+    { name: "Serviços", href: "#services" },
+    { name: "Depoimentos", href: "#testimonials" },
+    { name: "Contato", href: "#contact" }
+  ],
+  socials: [
+    { name: "WhatsApp", icon: "MessageCircle", href: "https://wa.me/5531988497222" },
+    { name: "Instagram", icon: "Instagram", href: "https://www.instagram.com/dicasdaprofbruna" },
+    // Adicione outras redes sociais se houver
+  ],
+  // Você pode adicionar um endereço se ela tiver um local físico principal
+  // address: "Rua Exemplo, 123 - Centro-Sul, Belo Horizonte - MG"
 };
