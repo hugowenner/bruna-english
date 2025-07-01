@@ -7,7 +7,7 @@ export default function Footer({ data }) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center"> {/* Alterado de to-purple-600 para to-green-600 */}
+            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center">
               <BookOpen className="w-6 h-6 text-white" />
             </div>
             <div>

@@ -24,7 +24,41 @@ export const heroData = {
       "Especialista em Inglês"
     ]
   },
-  backgroundImageUrl: "/assets/englishday.png" // Adicione esta linha
+  backgroundImageUrl: "/assets/englishday.png"
+};
+
+// NOVO: Objeto de dados para a seção 'Sobre Mim'
+export const aboutData = {
+  title: "Minha História e Paixão por Ensinar",
+  intro: "Conheça minha trajetória e o que me motiva a ensinar com paixão e dedicação.",
+  milestones: [ // NOVO: Mudei para uma lista de marcos
+    {
+      type: "inspiration",
+      headline: "Inspiração para Ensinar Inglês",
+      content: "Desde criança, sempre tive um gosto natural por ensinar e compartilhar conhecimento. Houve um momento decisivo na minha carreira quando, ao mudar de advogada para professora, percebi que o inglês se encaixava perfeitamente com minha paixão por lecionar e meu conhecimento da língua.",
+      icon: "Lightbulb"
+    },
+    {
+      type: "experience",
+      headline: "Experiências Marcantes com o Idioma",
+      content: "Minha primeira experiência verdadeiramente marcante com o inglês foi um intercâmbio para a Austrália quando tinha apenas 16 anos, em 2002. Anos depois, em 2017, uma viagem aos EUA, onde tive a oportunidade de estagiar em duas escolas Waldorf, aprofundou ainda mais minha conexão e aprendizado.",
+      icon: "Plane"
+    },
+    {
+      type: "education",
+      headline: "O Valor da Psicopedagogia no Ensino",
+      content: "Decidi me especializar em Psicopedagogia para compreender melhor as dificuldades de aprendizado e me tornar uma professora mais completa e eficaz. Essa pós-graduação foi fundamental na minha transição de carreira do Direito para a educação, e só depois completei minha graduação em Pedagogia. Meu caminho acadêmico: Direito → Psicopedagogia → Pedagogia.",
+      icon: "GraduationCap"
+    },
+    {
+      type: "reward",
+      headline: "Minha Maior Recompensa",
+      content: "Ver a evolução de cada aluno, o aumento da sua autoestima e a confiança crescendo são as maiores recompensas que sinto ao ensinar. É gratificante testemunhar o progresso e a paixão pelo aprendizado.",
+      icon: "Heart"
+    }
+  ],
+  certifications: "Antes do Direito, estudei muitos anos na Cultura Inglesa e obtive os certificados FCE e CAE de Cambridge.",
+  imageUrl: "/assets/bruna.jpeg" // Mantenha a imagem caso queira usá-la em algum lugar diferente depois
 };
 
 export const servicesData = {
@@ -58,17 +92,17 @@ export const qualificationsData = {
   qualifications: [
     {
       title: "Pedagogia",
-      description: "Especialista em metodologias e processos de ensino-aprendizagem eficazes.",
+      description: "Sólida base em teorias e práticas educacionais, focada na criação de ambientes de aprendizagem dinâmicos e inclusivos.", // Texto melhorado
       color: "from-blue-500 to-green-600"
     },
     {
       title: "Direito",
-      description: "Fundamentação legal para uma visão abrangente e ética do cenário educacional.",
+      description: "Conhecimento aprofundado em aspectos legais e éticos, proporcionando uma perspectiva abrangente para a atuação profissional e a cidadania.", // Texto melhorado
       color: "from-blue-500 to-green-600"
     },
     {
       title: "Psicopedagogia",
-      description: "Pós-graduação especializada em identificar e superar dificuldades de aprendizagem.",
+      description: "Especialização em estratégias para identificar e intervir nas dificuldades de aprendizagem, promovendo o desenvolvimento cognitivo e emocional dos alunos.", // Texto melhorado
       color: "from-blue-500 to-green-600"
     }
   ]
@@ -105,23 +139,33 @@ export const ctaData = {
   buttonSecondary: "Falar no WhatsApp"
 };
 
+// ATUALIZADO: Objeto de dados para a seção de contato
 export const contactData = {
   title: "Entre em Contato",
   contacts: [
     {
       title: "Telefone",
-      info: "(31) 99999-9999",
-      color: "text-blue-600"
+      info: "(31) 98849-7222",
+      color: "text-blue-600",
+      link: "tel:+5531988497222"
     },
     {
       title: "E-mail",
-      info: "bruna@email.com",
-      color: "text-green-600"
+      info: "brunabittaraujo@gmail.com",
+      color: "text-green-600",
+      link: "mailto:brunabittaraujo@gmail.com"
     },
     {
       title: "WhatsApp",
       info: "Clique para conversar",
-      color: "text-green-600"
+      color: "text-green-600",
+      link: "https://wa.me/5531988497222"
+    },
+    {
+      title: "Instagram",
+      info: "@dicasdaprofbruna",
+      color: "text-blue-500",
+      link: "https://www.instagram.com/dicasdaprofbruna"
     }
   ]
 };

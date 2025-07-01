@@ -7,7 +7,7 @@ export default function Header({ data }) {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center"> {/* Alterado de to-purple-600 para to-green-600 */}
+            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center">
               <BookOpen className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -15,7 +15,7 @@ export default function Header({ data }) {
               <p className="text-sm text-gray-600">{data.title}</p>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"> {/* Alterado de to-purple-600 para to-green-600 */}
+          <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300">
             {data.buttonText}
           </button>
         </div>

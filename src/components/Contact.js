@@ -1,12 +1,14 @@
 import React from 'react';
-import { Phone, Mail, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MessageCircle, Instagram } from 'lucide-react'; // Importe o ícone do Instagram
 
 export default function Contact({ data }) {
-  const getIcon = (index) => {
-    switch (index) {
-      case 0: return <Phone className="w-6 h-6" />;
-      case 1: return <Mail className="w-6 h-6" />;
-      case 2: return <MessageCircle className="w-6 h-6" />;
+  // Ajustado para usar o título do contato para determinar o ícone, mais robusto
+  const getIcon = (title) => {
+    switch (title) {
+      case "Telefone": return <Phone className="w-6 h-6" />;
+      case "E-mail": return <Mail className="w-6 h-6" />;
+      case "WhatsApp": return <MessageCircle className="w-6 h-6" />;
+      case "Instagram": return <Instagram className="w-6 h-6" />; // NOVO: case para Instagram
       default: return null;
     }
   };
@@ -19,7 +21,7 @@ export default function Contact({ data }) {
       return (
         <>
           {otherWords}{' '}
-          <span className="text-green-600">{lastWord}</span> {/* Alterado de text-purple-600 para text-green-600 */}
+          <span className="text-green-600">{lastWord}</span>
         </>
       );
     }
@@ -35,14 +37,25 @@ export default function Contact({ data }) {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8"> {/* Ajustado para 4 colunas em telas grandes */}
           {data.contacts.map((contact, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className={`w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6 ${contact.color}`}>
-                {getIcon(index)}
+                {getIcon(contact.title)} {/* Passa o título do contato para getIcon */}
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">{contact.title}</h3>
-              <p className="text-gray-600">{contact.info}</p>
+              {contact.link ? (
+                <a
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                >
+                  {contact.info}
+                </a>
+              ) : (
+                <p className="text-gray-600">{contact.info}</p>
+              )}
             </div>
           ))}
         </div>

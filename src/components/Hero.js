@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, CheckCircle, GraduationCap, Award, BookOpen, User } from 'lucide-react';
+import { Star, CheckCircle, GraduationCap, Award, BookOpen } from 'lucide-react'; // 'User' foi removido desta linha
 
 export default function Hero({ data, isVisible }) {
   const sectionStyle = data.backgroundImageUrl ? {
@@ -11,9 +11,9 @@ export default function Hero({ data, isVisible }) {
   return (
     <section id="hero" className="relative overflow-hidden py-20" style={sectionStyle}>
       {data.backgroundImageUrl && (
-        <div className="absolute inset-0 bg-white opacity-80 z-0"></div> // Camada de opacidade
+        <div className="absolute inset-0 bg-white opacity-80 z-0"></div>
       )}
-      <div className="relative z-10 max-w-6xl mx-auto px-6"> {/* Conteúdo com z-index maior para ficar acima do fundo */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'}`}>
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -51,9 +51,15 @@ export default function Hero({ data, isVisible }) {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-400 rounded-3xl transform rotate-6"></div>
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-green-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <User className="w-12 h-12 text-white" />
+                  {/* INÍCIO DA MUDANÇA: SUBSTITUIÇÃO DO ÍCONE PELA IMAGEM */}
+                  <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
+                    <img
+                      src="/assets/bruna.jpeg" // Caminho da sua foto, já está em public/assets
+                      alt="Professora Bruna Bittencourt"
+                      className="w-full h-full object-cover" // Garante que a imagem preencha o círculo
+                    />
                   </div>
+                  {/* FIM DA MUDANÇA */}
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{data.profile.name}</h3>
                   <div className="space-y-2 text-gray-600">
                     <p className="flex items-center justify-center">
@@ -75,7 +81,6 @@ export default function Hero({ data, isVisible }) {
           </div>
         </div>
       </div>
-      {/* Remove o gradiente de fundo anterior se você não o quiser mais com a imagem */}
       <div className="absolute inset-0 -z-10 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
         <div className="absolute top-40 right-10 w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
