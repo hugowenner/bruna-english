@@ -59,6 +59,19 @@ export default function Contact({ data }) {
             </div>
 
             <div>
+              <label htmlFor="phone" className="block text-gray-700 text-sm font-bold mb-2">
+                Telefone (com DDD):
+              </label>
+              <input
+                type="tel" // Usar type="tel" é bom para dispositivos móveis
+                id="phone"
+                name="phone" // Este 'name' é o que o Netlify vai usar
+                className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="(31) 98849-7222" // Um exemplo de placeholder
+              />
+            </div>
+
+            <div>
               <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
                 Seu E-mail:
               </label>
