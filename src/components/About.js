@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lightbulb, Plane, GraduationCap, Heart, BookOpenText, Award } from 'lucide-react'; // Ícones
+import { Lightbulb, Plane, GraduationCap, Heart, Award } from 'lucide-react'; // Ícones
 
 export default function About({ data, isVisible }) {
   const getIconComponent = (iconName) => {
