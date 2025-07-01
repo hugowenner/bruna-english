@@ -2,4 +2,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false # Define se o redirecionamento deve ser aplicado mesmo se um arquivo existir no caminho
