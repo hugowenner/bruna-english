@@ -36,32 +36,8 @@ export default function Contact({ data }) {
           </h2>
         </div>
 
-        {/* Seção de Contatos Existente */}
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16"> {/* Adicionado mb-16 para espaçamento */}
-          {data.contacts.map((contact, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              <div className={`w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6 ${contact.color}`}>
-                {getIcon(contact.title)}
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">{contact.title}</h3>
-              {contact.link ? (
-                <a
-                  href={contact.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                >
-                  {contact.info}
-                </a>
-              ) : (
-                <p className="text-gray-600">{contact.info}</p>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* NOVO: Formulário de Contato */}
-        <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        {/* NOVO: Formulário de Contato (MOVIDO PARA CIMA) */}
+        <div className="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg mb-16"> {/* Adicionado mb-16 para espaçamento */}
           <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
             Envie sua Mensagem
           </h3>
@@ -115,6 +91,30 @@ export default function Contact({ data }) {
               Enviar Mensagem
             </button>
           </form>
+        </div>
+
+        {/* Seção de Contatos Existente (MOVIDO PARA BAIXO) */}
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8"> {/* Removido mb-16 daqui, pois já foi adicionado no formulário */}
+          {data.contacts.map((contact, index) => (
+            <div key={index} className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <div className={`w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6 ${contact.color}`}>
+                {getIcon(contact.title)}
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">{contact.title}</h3>
+              {contact.link ? (
+                <a
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                >
+                  {contact.info}
+                </a>
+              ) : (
+                <p className="text-gray-600">{contact.info}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
