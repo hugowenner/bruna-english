@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, CheckCircle, GraduationCap, Award, BookOpen } from 'lucide-react'; // 'User' foi removido desta linha
+import { Star, CheckCircle, GraduationCap, Award, BookOpen } from 'lucide-react';
 
 export default function Hero({ data, isVisible }) {
   const sectionStyle = data.backgroundImageUrl ? {
@@ -28,12 +28,20 @@ export default function Hero({ data, isVisible }) {
               {data.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              {/* PRIMEIRO BOTÃO: "Quero Aprender!" - Leva para o formulário na seção de contato */}
+              <a
+                href="#contact" // Link para a seção de contato (onde está o formulário)
+                className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
+              >
                 {data.ctaPrimary}
-              </button>
-              <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-blue-500 hover:text-blue-600 transition-all duration-300">
+              </a>
+              {/* SEGUNDO BOTÃO: "Saber Mais" - Leva para a seção de contato */}
+              <a
+                href="#contact" // Link para a seção de contato
+                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-blue-500 hover:text-blue-600 transition-all duration-300 text-center"
+              >
                 {data.ctaSecondary}
-              </button>
+              </a>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-600">
               <div className="flex items-center">
@@ -51,15 +59,13 @@ export default function Hero({ data, isVisible }) {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-400 rounded-3xl transform rotate-6"></div>
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
                 <div className="text-center">
-                  {/* INÍCIO DA MUDANÇA: SUBSTITUIÇÃO DO ÍCONE PELA IMAGEM */}
                   <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
                     <img
-                      src="/assets/bruna.jpeg" // Caminho da sua foto, já está em public/assets
+                      src="/assets/bruna.jpeg"
                       alt="Professora Bruna Bittencourt"
-                      className="w-full h-full object-cover" // Garante que a imagem preencha o círculo
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                  {/* FIM DA MUDANÇA */}
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{data.profile.name}</h3>
                   <div className="space-y-2 text-gray-600">
                     <p className="flex items-center justify-center">

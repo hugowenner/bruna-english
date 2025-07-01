@@ -12,17 +12,24 @@ export default function About({ data, isVisible }) {
     }
   };
 
+  const titleParts = data.title.split(' '); // Dividir o título em partes
+  const firstPart = titleParts[0]; // "Minha"
+  const secondPart = titleParts[1]; // "História"
+  const middlePart = titleParts.slice(2, -1).join(' '); // "e Paixão por"
+  const lastPart = titleParts[titleParts.length - 1]; // "Ensinar"
+
   return (
-    <section id="about" className="py-20 bg-gray-50"> {/* Fundo mais claro */}
+    <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            {data.title.split(' ')[0]}{' '}
-            <span className="text-green-600">{data.title.split(' ')[1]}</span>{' '}
-            {data.title.split(' ').slice(2).join(' ')}
+            {firstPart}{' '}
+            <span className="text-green-600">{secondPart}</span>{' '}
+            {middlePart}{' '}
+            <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">{lastPart}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {data.intro} {/* Usa a nova intro do data.js */}
+            {data.intro}
           </p>
         </div>
 
@@ -35,7 +42,7 @@ export default function About({ data, isVisible }) {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <div className="flex-shrink-0 w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center mr-6">
-                {getIconComponent(milestone.icon)} {/* Renderiza o ícone do marco */}
+                {getIconComponent(milestone.icon)}
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-2">

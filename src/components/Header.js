@@ -15,9 +15,13 @@ export default function Header({ data }) {
               <p className="text-sm text-gray-600">{data.title}</p>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+          {/* Botão "Agendar Aula" - AGORA COM LINK PARA A SEÇÃO DE CONTATO */}
+          <a
+            href="#contact" // Link para a seção de contato
+            className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-center"
+          >
             {data.buttonText}
-          </button>
+          </a>
         </div>
       </div>
     </header>

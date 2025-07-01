@@ -11,12 +11,19 @@ export default function CTA({ data }) {
           {data.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Botão "Aula Gratuita" - permanece como está, direcionando para o formulário */}
           <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
             {data.buttonPrimary}
           </button>
-          <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+          {/* Botão "Falar no WhatsApp" - AGORA COM LINK PARA WHATSAPP */}
+          <a
+            href="https://wa.me/5531988497222" // Link direto para o WhatsApp da Bruna
+            target="_blank" // Abre em uma nova aba
+            rel="noopener noreferrer" // Para segurança
+            className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 text-center"
+          >
             {data.buttonSecondary}
-          </button>
+          </a>
         </div>
       </div>
     </section>

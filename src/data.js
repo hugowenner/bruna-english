@@ -112,21 +112,70 @@ export const testimonialsData = {
   title: "O que dizem nossos Alunos",
   testimonials: [
     {
-      name: "Maria Silva",
-      role: "Mãe da Ana (8 anos)",
-      text: "A Ana melhorou muito em inglês com as aulas da Bruna. Ela adora as atividades criativas!",
+      name: "Débora",
+      role: "Aluna",
+      text: "Bruna querida, amei a aula! Mesmo 'tropeçando', estou gostando muito. E sou muito feliz de ser sua aluna! 😍",
       rating: 5
     },
     {
-      name: "João Santos",
-      role: "Pai do Pedro (12 anos)",
-      text: "Excelente professora! O Pedro passou de odiou inglês para ser sua matéria favorita.",
+      name: "Mãe de Aluno",
+      role: "Responsável",
+      text: "Meu filho achou que ia tirar 2, e a nota geral de inglês dele foi a maior! Ele está bem feliz agora! 🙏",
       rating: 5
     },
     {
-      name: "Carla Oliveira",
-      role: "Estudante universitária",
-      text: "As aulas particulares me ajudaram muito a melhorar minha fluência. Super recomendo!",
+      name: "Ex-aluno(a)",
+      role: "Antigo Colega de Escola",
+      text: "Fico muito feliz em te encontrar novamente. Suas aulas foram incrivelmente importantes na minha vida, você não tem ideia! ✨",
+      rating: 5
+    },
+    {
+      name: "Mãe de Aluno",
+      role: "Responsável",
+      text: "Uauuuu! Meu filho arrasou na redação! Parabéns, Bruna! 🥳",
+      rating: 5
+    },
+    {
+      name: "Clarice",
+      role: "Aluna",
+      text: "Amei a aula! Mesmo enferrujada, sei que a Bruna vai me ajudar muito. Muito obrigada pela sua disponibilidade!",
+      rating: 5
+    },
+    {
+      name: "Maria Clara",
+      role: "Aluna",
+      text: "BRUNAAA! Passei em português! Tirei 70 na prova. Muito obrigada por tudo!",
+      rating: 5
+    },
+    // NOVOS DEPOIMENTOS ADICIONADOS AQUI:
+    {
+      name: "Maria Clara",
+      role: "Aluna",
+      text: "Hello Bruna! Achei uma das provas mais fáceis do ano com tudo que estudamos. Obrigada! Mal posso esperar para mandar a nota!",
+      rating: 5
+    },
+    {
+      name: "Mãe de Aluno",
+      role: "Responsável",
+      text: "Muito obrigada pelo carinho e dedicação! Meus filhos amaram tê-la como professora! THANK YOU! 🥰",
+      rating: 5
+    },
+    {
+      name: "Mãe de Henrique",
+      role: "Responsável",
+      text: "Henrique conseguiu recuperar a nota! Ficamos muito felizes com esse resultado em pouco tempo de aula com você. Muito grata!",
+      rating: 5
+    },
+    {
+      name: "Responsável de Aluno", // Manter genérico se o nome exato não for explícito
+      role: "Responsável",
+      text: "Nós que agradecemos muito pelo suporte! Foi essencial para ele recuperar a confiança e ter melhores resultados. Muito obrigada de coração pelo cuidado e dedicação!",
+      rating: 5
+    },
+    {
+      name: "Ana Cláudia",
+      role: "Mãe de Henrique",
+      text: "Henrique tirou 4,5 em 5,0 na atividade! Ele chegou da escola me mostrando com a maior alegria. Muito obrigada pela sua ajuda, Bruna! Estamos felizes demais! 😀",
       rating: 5
     }
   ]
