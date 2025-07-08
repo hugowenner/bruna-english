@@ -8,8 +8,8 @@ export const headerData = {
 
 export const heroData = {
   badgeText: "Professora Especializada",
-  headline: "Sua Fluência em Inglês Começa Aqui",
-  description: "Aulas dinâmicas e sob medida para todas as idades e objetivos. Do reforço escolar à conversação avançada, com acompanhamento personalizado para seu sucesso.",
+  headline: "Você se sente travado para falar inglês? Sua fluência começa aqui!",
+  description: "Entendo a dificuldade de quem se sente travado com o inglês. Minhas aulas são dinâmicas e sob medida para todas as idades e objetivos, do reforço escolar à conversação avançada. Ofereço acompanhamento personalizado para o seu sucesso, transformando a dificuldade em confiança. ",
   ctaPrimary: "Quero Aprender!",
   ctaSecondary: "Saber Mais",
   features: [
@@ -30,7 +30,7 @@ export const heroData = {
 // NOVO: Objeto de dados para a seção 'Sobre Mim'
 export const aboutData = {
   title: "Minha História e Paixão por Ensinar",
-  intro: "Conheça minha trajetória e o que me motiva a ensinar com paixão e dedicação.",
+  intro: "Conheça minha trajetória e o que me motiva a ensinar com paixão e dedicação, compreendendo as necessidades individuais de cada aluno.",
   milestones: [ // NOVO: Mudei para uma lista de marcos
     {
       type: "inspiration",
@@ -46,36 +46,42 @@ export const aboutData = {
     },
     {
       type: "education",
-      headline: "O Valor da Psicopedagogia no Ensino",
-      content: "Decidi me especializar em Psicopedagogia para compreender melhor as dificuldades de aprendizado e me tornar uma professora mais completa e eficaz. Essa pós-graduação foi fundamental na minha transição de carreira do Direito para a educação, e só depois completei minha graduação em Pedagogia. Meu caminho acadêmico: Direito → Psicopedagogia → Pedagogia.",
+      headline: "O Valor da Psicopedagogia no Ensino Personalizado",
+      content: "Decidi me especializar em Psicopedagogia para compreender melhor as dificuldades de aprendizado e me tornar uma professora mais completa e eficaz. Essa pós-graduação foi fundamental na minha transição de carreira do Direito para a educação, e só depois completei minha graduação em Pedagogia. Meu caminho acadêmico: Direito → Psicopedagogia → Pedagogia. Essa formação me permite oferecer um ensino verdadeiramente personalizado, abordando também as questões emocionais ligadas ao aprendizado.",
       icon: "GraduationCap"
     },
     {
       type: "reward",
-      headline: "Minha Maior Recompensa",
-      content: "Ver a evolução de cada aluno, o aumento da sua autoestima e a confiança crescendo são as maiores recompensas que sinto ao ensinar. É gratificante testemunhar o progresso e a paixão pelo aprendizado.",
+      headline: "Minha Maior Recompensa: Sua Evolução",
+      content: "Ver a evolução de cada aluno, o aumento da sua autoestima e a confiança crescendo são as maiores recompensas que sinto ao ensinar. É gratificante testemunhar o progresso, como quando um aluno que esperava tirar 2, alcança a maior nota da turma! Minha maior alegria é transformar dificuldades em sucesso e paixão pelo aprendizado.",
       icon: "Heart"
     }
   ],
   certifications: "Antes do Direito, estudei muitos anos na Cultura Inglesa e obtive os certificados FCE e CAE de Cambridge.",
-  imageUrl: "/assets/bruna.jpeg" // Mantenha a imagem caso queira usá-la em algum lugar diferente depois
+  imageUrl: "/assets/bruna.jpeg"
 };
 
 export const servicesData = {
-  title: "Serviços Especializados",
-  description: "Metodologia personalizada para cada idade e nível de conhecimento",
+  title: "Serviços Especializados e Personalizados",
+  description: "Metodologia adaptada para cada idade, nível de conhecimento e necessidade. Atendemos desde o reforço escolar até a conversação avançada.",
   imageUrl: "/assets/ingles.jpg",
   services: [
     {
       title: "Inglês para Crianças",
       subtitle: "Presencial (1º ao 9º ano) - BH Centro-Sul",
-      description: "Apoio pedagógico especializado para melhorar o desempenho escolar em inglês. Aulas presenciais em Belo Horizonte (região centro-sul).",
+      description: "Apoio pedagógico especializado para melhorar o desempenho escolar em inglês, com foco em desenvolver a paixão pelo idioma desde cedo. Aulas presenciais em Belo Horizonte (região centro-sul).",
       color: "from-blue-500 to-green-600"
     },
     {
       title: "Inglês para Adolescentes e Adultos",
-      subtitle: "Online e Presencial",
-      description: "Aulas personalizadas com foco na fluência conversacional. Opções online para flexibilidade e presenciais em Belo Horizonte (região centro-sul).",
+      subtitle: "Online e Presencial (Todos os Níveis)",
+      description: "Aulas personalizadas com foco na fluência conversacional e no desenvolvimento de todas as habilidades (leitura, escrita e escuta). Atendo desde iniciantes até níveis avançados que buscam aprimorar a conversação e escrita. Opções online para flexibilidade e presenciais em Belo Horizonte (região centro-sul).",
+      color: "from-blue-500 to-green-600"
+    },
+    {
+      title: "Reforço Escolar de Português (Leitura e Escrita)",
+      subtitle: "Presencial (1º ao 9º ano) - BH Centro-Sul",
+      description: "Suporte pedagógico para aprimoramento da leitura e produção de texto para alunos do ensino fundamental, com aulas presenciais na região centro-sul de Belo Horizonte.",
       color: "from-blue-500 to-green-600"
     },
     {
@@ -88,28 +94,28 @@ export const servicesData = {
 };
 
 export const qualificationsData = {
-  title: "Formação Acadêmica",
+  title: "Formação Acadêmica e Expertise Psicopedagógica",
   qualifications: [
     {
+      title: "Psicopedagogia",
+      description: "Especialização fundamental para identificar e intervir nas dificuldades de aprendizagem, promovendo o desenvolvimento cognitivo e emocional dos alunos. Essencial para um ensino verdadeiramente personalizado, que considera o aluno como um todo.",
+      color: "from-blue-500 to-green-600"
+    },
+    {
       title: "Pedagogia",
-      description: "Sólida base em teorias e práticas educacionais, focada na criação de ambientes de aprendizagem dinâmicos e inclusivos.", // Texto melhorado
+      description: "Sólida base em teorias e práticas educacionais, focada na criação de ambientes de aprendizagem dinâmicos e inclusivos, adaptados às necessidades individuais.",
       color: "from-blue-500 to-green-600"
     },
     {
       title: "Direito",
-      description: "Conhecimento aprofundado em aspectos legais e éticos, proporcionando uma perspectiva abrangente para a atuação profissional e a cidadania.", // Texto melhorado
-      color: "from-blue-500 to-green-600"
-    },
-    {
-      title: "Psicopedagogia",
-      description: "Especialização em estratégias para identificar e intervir nas dificuldades de aprendizagem, promovendo o desenvolvimento cognitivo e emocional dos alunos.", // Texto melhorado
+      description: "Conhecimento aprofundado em aspectos legais e éticos, proporcionando uma perspectiva abrangente para a atuação profissional e a cidadania.",
       color: "from-blue-500 to-green-600"
     }
   ]
 };
 
 export const testimonialsData = {
-  title: "O que dizem nossos Alunos",
+  title: "O que dizem nossos Alunos e Responsáveis: Histórias Reais de Sucesso",
   testimonials: [
     {
       name: "Débora",
@@ -147,7 +153,6 @@ export const testimonialsData = {
       text: "BRUNAAA! Passei em português! Tirei 70 na prova. Muito obrigada por tudo!",
       rating: 5
     },
-    // NOVOS DEPOIMENTOS ADICIONADOS AQUI:
     {
       name: "Maria Clara",
       role: "Aluna",
@@ -167,7 +172,7 @@ export const testimonialsData = {
       rating: 5
     },
     {
-      name: "Responsável de Aluno", // Manter genérico se o nome exato não for explícito
+      name: "Responsável de Aluno",
       role: "Responsável",
       text: "Nós que agradecemos muito pelo suporte! Foi essencial para ele recuperar a confiança e ter melhores resultados. Muito obrigada de coração pelo cuidado e dedicação!",
       rating: 5
@@ -182,10 +187,10 @@ export const testimonialsData = {
 };
 
 export const ctaData = {
-  headline: "Pronto para Começar sua Jornada?",
-  description: "Agende sua aula experimental gratuita e descubra como podemos ajudar você a dominar o inglês",
-  buttonPrimary: "Aula Gratuita",
-  buttonSecondary: "Falar no WhatsApp"
+  headline: "Pronto para Começar sua Jornada Rumo à Fluência?",
+  description: "Agende sua aula experimental gratuita e descubra como a metodologia personalizada da Bruna pode te ajudar a dominar o inglês e alcançar seus objetivos.",
+  buttonPrimary: "Agendar Aula Gratuita",
+  buttonSecondary: "Falar com Bruna no WhatsApp"
 };
 
 // ATUALIZADO: Objeto de dados para a seção de contato
@@ -221,10 +226,9 @@ export const contactData = {
 
 export const footerData = {
   name: "Bruna Bittencourt",
-  tagline: "Professora de Inglês", // Renomeado de 'title' para 'tagline' para evitar confusão
-  description: "Transformando vidas através do ensino de inglês com metodologia personalizada e humanizada.",
+  tagline: "Professora de Inglês e Psicopedagoga",
+  description: "Transformando vidas através do ensino de inglês e reforço escolar com metodologia personalizada e humanizada, focada no desenvolvimento integral do aluno.",
   copyright: "© 2025 Bruna Bittencourt. Todos os direitos reservados.",
-  // NOVOS DADOS PARA O RODAPÉ
   links: [
     { name: "Início", href: "#hero" },
     { name: "Sobre Mim", href: "#about" },
@@ -235,8 +239,5 @@ export const footerData = {
   socials: [
     { name: "WhatsApp", icon: "MessageCircle", href: "https://wa.me/5531988497222" },
     { name: "Instagram", icon: "Instagram", href: "https://www.instagram.com/dicasdaprofbruna" },
-    // Adicione outras redes sociais se houver
   ],
-  // Você pode adicionar um endereço se ela tiver um local físico principal
-  // address: "Rua Exemplo, 123 - Centro-Sul, Belo Horizonte - MG"
 };

@@ -1,12 +1,13 @@
 import React from 'react';
-import { Users, Video, MapPin } from 'lucide-react';
+import { Users, Video, MapPin, Calculator } from 'lucide-react'; // Adicionado Calculator aqui
 
 export default function Services({ data, isVisible }) {
   const getIcon = (index) => {
     switch (index) {
       case 0: return <Users className="w-8 h-8" />;
       case 1: return <Video className="w-8 h-8" />;
-      case 2: return <MapPin className="w-8 h-8" />;
+      case 2: return <MapPin className="w-8 h-8" />; // Ícone atual para Português
+      case 3: return <Calculator className="w-8 h-8" />; // NOVO: Ícone para Matemática
       default: return null;
     }
   };
@@ -21,12 +22,12 @@ export default function Services({ data, isVisible }) {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {data.description}
           </p>
-          {data.imageUrl && ( // Verifica se a URL da imagem existe antes de renderizar
-            <div className="mt-12 flex justify-center"> {/* Adiciona margem superior e centraliza */}
+          {data.imageUrl && (
+            <div className="mt-12 flex justify-center">
               <img
-                src={data.imageUrl} // Usa a URL da imagem do data.js
-                alt="Serviços de Inglês e Matemática" // Texto alternativo para acessibilidade
-                className="w-full max-w-lg rounded-lg shadow-lg object-cover" // Estilos Tailwind para a imagem
+                src={data.imageUrl}
+                alt="Serviços de Inglês e Matemática"
+                className="w-full max-w-lg rounded-lg shadow-lg object-cover"
               />
             </div>
           )}
