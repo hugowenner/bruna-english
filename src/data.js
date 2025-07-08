@@ -114,75 +114,80 @@ export const qualificationsData = {
   ]
 };
 
+// src/data.js (apenas a parte de testimonialsData)
+
 export const testimonialsData = {
   title: "O que dizem nossos Alunos e Responsáveis: Histórias Reais de Sucesso",
   testimonials: [
     {
+      name: "Ana Cláudia",
+      role: "Mãe de Henrique (Colégio Santo Agostinho)", // Detalhe adicionado
+      text: "Bom dia, Bruna! Saiu o resultado da atividade processual! Henrique tirou 4,5 em 5,0! Ele chegou da escola me mostrando, na maior alegria! Muito obrigada pela sua ajuda, Bruna! Estamos felizes demais!",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.38.40.jpeg" // Adicionada a referência da imagem
+    },
+    {
+      name: "Mãe de Henrique", // Deixei genérico, se quiser, pode usar o nome dela novamente
+      role: "Responsável (Colégio Santo Agostinho)", // Detalhe adicionado
+      text: "Henrique conseguiu recuperar a nota! Ficamos muito felizes com esse resultado em pouco tempo de aula com você. Muito grata! Nossa, Bruna! Fico muito feliz e grata por isso!",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.39.11.jpeg" // Adicionada a referência da imagem
+    },
+    {
+      name: "Maria Clara",
+      role: "Aluna (Colégio Marista Dom Silvério)", // Detalhe adicionado
+      text: "Hello Bruna! Achei uma das provas mais fáceis do ano com tudo que estudamos. Obrigada! Mal posso esperar para mandar a nota! BRUNAAA! Passei em português! Tirei 70 na prova. Muito obrigada por tudo!",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.40.00.jpeg" // Adicionada a referência da imagem
+    },
+    {
+      name: "Maria Eugênia", // Nome completo
+      role: "Mãe de Maria Clara, Luiza e Rodrigo (Colégio Marista Dom Silvério)", // Detalhe adicionado
+      text: "Vou combinar com o Rogério e lhe aviso! Muito obrigada pelo carinho e dedicação com os meninos! Eles amaram tê-la como professora! THANK YOU! 🥰",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.40.17.jpeg" // Adicionada a referência da imagem
+    },
+    {
+      name: "Responsável de Aluno", // Pode ser Carmelita, se quiser especificar
+      role: "Responsável (Colégio Santo Antônio)", // Detalhe adicionado
+      text: "Nós que agradecemos, e muito, o suporte que deu para [aluno] nesse período! Foi essencial para ele recuperar a confiança e o ânimo para enfrentar o desafio de aprender a matemática e ter melhores resultados! Muito obrigada, de coração, por todo seu cuidado e dedicação conosco!",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.41.57.jpeg" // Adicionada a referência da imagem
+    },
+    {
+      name: "Clarice",
+      role: "Aluna adulta", // Detalhe adicionado
+      text: "Eu amei a aula! Estou enferrujada, mas você vai me ajudar muito com isso! Muito obrigada pela sua disponibilidade @Bruna Bittencourt!",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.42.22.jpeg" // Adicionada a referência da imagem
+    },
+    {
       name: "Débora",
-      role: "Aluna",
-      text: "Bruna querida, amei a aula! Mesmo 'tropeçando', estou gostando muito. E sou muito feliz de ser sua aluna! 😍",
-      rating: 5
+      role: "Aluna", // Pode adicionar mais detalhes se tiver
+      text: "Bruna querida, obrigada pela aula. Amei. Vou tropeçando mas gostei demais. Depois me passa o pix. Bjs. E eu de ser sua aluna. 😍",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.44.38.jpeg" // Adicionada a referência da imagem
     },
     {
-      name: "Mãe de Aluno",
-      role: "Responsável",
-      text: "Meu filho achou que ia tirar 2, e a nota geral de inglês dele foi a maior! Ele está bem feliz agora! 🙏",
-      rating: 5
+      name: "Mãe de Aluno", // Pode ser o nome da mãe, se preferir
+      role: "Responsável", // Se souber o colégio, adicione
+      text: "Ahhhh simmmm... aí da mais porq achou q ia tirar 2 rss. A nota geral de inglês dele foi a maior depois de religião tirou 30 🙏. Bem feliz agora 🙏", // Ajustei o texto para ficar mais coeso
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.45.22.jpeg" // Adicionada a referência da imagem
     },
     {
+      name: "Sérgio", // Nome completo
+      role: "Ex-aluno e Colega de Colégio", // Detalhe adicionado
+      text: "Graças a Deus tudo ótimo... melhor agora falando com você e tendo notícias suas. Comecei a te seguir no seu Instagram profissional e só lembrava das aulas que você me dava. Você não tem ideia o quão importante foi em minha vida!!",
+      rating: 5,
+      source: "WhatsApp Image 2025-07-03 at 13.45.57.jpeg" // Adicionada a referência da imagem
+    },
+     { // Mantenho este, se desejar mais algum detalhe, me diga.
       name: "Ex-aluno(a)",
       role: "Antigo Colega de Escola",
       text: "Fico muito feliz em te encontrar novamente. Suas aulas foram incrivelmente importantes na minha vida, você não tem ideia! ✨",
       rating: 5
     },
-    {
-      name: "Mãe de Aluno",
-      role: "Responsável",
-      text: "Uauuuu! Meu filho arrasou na redação! Parabéns, Bruna! 🥳",
-      rating: 5
-    },
-    {
-      name: "Clarice",
-      role: "Aluna",
-      text: "Amei a aula! Mesmo enferrujada, sei que a Bruna vai me ajudar muito. Muito obrigada pela sua disponibilidade!",
-      rating: 5
-    },
-    {
-      name: "Maria Clara",
-      role: "Aluna",
-      text: "BRUNAAA! Passei em português! Tirei 70 na prova. Muito obrigada por tudo!",
-      rating: 5
-    },
-    {
-      name: "Maria Clara",
-      role: "Aluna",
-      text: "Hello Bruna! Achei uma das provas mais fáceis do ano com tudo que estudamos. Obrigada! Mal posso esperar para mandar a nota!",
-      rating: 5
-    },
-    {
-      name: "Mãe de Aluno",
-      role: "Responsável",
-      text: "Muito obrigada pelo carinho e dedicação! Meus filhos amaram tê-la como professora! THANK YOU! 🥰",
-      rating: 5
-    },
-    {
-      name: "Mãe de Henrique",
-      role: "Responsável",
-      text: "Henrique conseguiu recuperar a nota! Ficamos muito felizes com esse resultado em pouco tempo de aula com você. Muito grata!",
-      rating: 5
-    },
-    {
-      name: "Responsável de Aluno",
-      role: "Responsável",
-      text: "Nós que agradecemos muito pelo suporte! Foi essencial para ele recuperar a confiança e ter melhores resultados. Muito obrigada de coração pelo cuidado e dedicação!",
-      rating: 5
-    },
-    {
-      name: "Ana Cláudia",
-      role: "Mãe de Henrique",
-      text: "Henrique tirou 4,5 em 5,0 na atividade! Ele chegou da escola me mostrando com a maior alegria. Muito obrigada pela sua ajuda, Bruna! Estamos felizes demais! 😀",
-      rating: 5
-    }
   ]
 };
 

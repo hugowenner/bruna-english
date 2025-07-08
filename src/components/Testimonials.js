@@ -1,3 +1,5 @@
+// src/components/Testimonials.js
+
 import React, { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
 
@@ -6,9 +8,11 @@ export default function Testimonials({ data }) {
 
   useEffect(() => {
     if (data && data.testimonials && data.testimonials.length > 0) {
+      // Aumentado o tempo de 5000ms (5 segundos) para 8000ms (8 segundos)
+      // Você pode ajustar esse valor para o que achar melhor (ex: 10000ms para 10 segundos)
       const interval = setInterval(() => {
         setActiveTestimonial((prev) => (prev + 1) % data.testimonials.length);
-      }, 5000);
+      }, 8000); // <-- ALERTA: VALOR ALTERADO AQUI PARA MAIS LENTO
       return () => clearInterval(interval);
     }
   }, [data]);
@@ -22,7 +26,7 @@ export default function Testimonials({ data }) {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            {data.title.split(' ').slice(0, -1).join(' ')} <span className="text-green-600">{data.title.split(' ').slice(-1)}</span> {/* ALTERADO: de text-blue-600 para text-green-600 */}
+            {data.title.split(' ').slice(0, -1).join(' ')} <span className="text-green-600">{data.title.split(' ').slice(-1)}</span>
           </h2>
         </div>
 

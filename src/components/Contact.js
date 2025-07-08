@@ -55,6 +55,7 @@ export default function Contact({ data }) {
                 name="name"
                 className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 required
+                placeholder="Pedro Henrique"
               />
             </div>
 
@@ -67,7 +68,7 @@ export default function Contact({ data }) {
                 id="phone"
                 name="phone" // Este 'name' é o que o Netlify vai usar
                 className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
-                placeholder="(31) 98849-7222" // Um exemplo de placeholder
+                placeholder="(31) xxxxx-xxxx" // Um exemplo de placeholder
               />
             </div>
 
@@ -81,6 +82,7 @@ export default function Contact({ data }) {
                 name="email"
                 className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 required
+                placeholder="abcdef@abc.com.br"
               />
             </div>
 
@@ -94,6 +96,7 @@ export default function Contact({ data }) {
                 rows="5"
                 className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 required
+                placeholder="Sua mensagem"
               ></textarea>
             </div>
 
